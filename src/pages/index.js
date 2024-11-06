@@ -3,8 +3,12 @@ import localFont from "next/font/local";
 {/* import components */}
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Banner from "@/components/Banner";
+import Abouts from "@/components/Abouts"
+import Footer from "@/components/Footer";
+import Experience from "@/components/Experience";
 
+import Services from "@/components/Services";
+import Call from "@/components/Call";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,7 +26,12 @@ export default function Home() {
    <div>
     <Navbar/>
     <Hero/>
-    <Banner />
+    <Abouts/>
+    <Experience/>
+    <Services/>
+    <Call/>
+    <Footer/>
+    
    </div>
   );
 }
